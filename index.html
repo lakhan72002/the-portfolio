@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lakhan's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- linking font awesome  -->
+    <script src="https://kit.fontawesome.com/b60d92f815.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- ------header---- -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/Logo-lak.png" alt="" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>
+                    <i class="fa-brands fa-html5"></i>
+                    
+                    <i class="fa-brands fa-square-js"></i>
+                    <i class="fa-brands fa-python"></i>
+                    <i class="fa-brands fa-bootstrap"></i>
+                </p>
+                <h1>Hi,<br>My name is <span id="name-glow">Lakhan</span><br>I'm a <span id="element"></span></h1>
+                <a href="images/Lakhan Sharma Resume.pdf" download class="btn-new">Download CV</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------about------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello there! I'm a passionate programmer and web developer currently on the exciting journey of pursuing my engineering degree. Nestled in the vibrant city of Ghaziabad, I find inspiration in both the dynamic tech landscape and the rich cultural tapestry that surrounds me.
+                        <br>
+                        As a dedicated student, I am committed to honing my skills and staying at the forefront of technological advancements. Beyond the screen and keyboard, I savor the moments of downtime, where I enjoy exploring new technologies, attending tech meetups, and immersing myself in the latest industry trends.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <!-- skills -->
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+
+                            <li><span>Web Developer</span><br>Web app Developement</li>
+
+                            <li><span>UI/UX</span><br>Designing Web Interfaces</li>                            
+
+                            <li><span>Programming</span><br>Python, C++, JavaScript</li>
+                        </ul>
+                    </div>
+
+                    <!-- experience -->
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022 - Current</span><br>Web Developer</li>                           
+                            <li><span>Aug 2023</span><br>Web Developement Internship</li>                           
+
+                        </ul>
+                    </div>
+
+                    <!-- education -->
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020-24</span><br>Raj Kumar Goel Institute of Technology</li>
+                            <li><span>2019-20</span><br>Kendriya Vidyalaya No 1 AFS Hindon</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------services-------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code service-icon"></i>
+                    <h2>Web Developement</h2>
+                    <p>Create beautiful and fully functional websites using the latest technologies.</p>
+
+                    <!-- <a href="#">Learn More</a> -->
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop service-icon"></i>
+                    <h2>Web Design</h2>
+                    <p>Design a full front of a webpage</p>
+
+                    <!-- <a href="#">Learn More</a> -->
+                </div>
+                <div>
+                    <i class="fa-brands fa-python service-icon"></i>
+                    <h2>Software Programmer</h2>
+                    <p>Coding in programming language- C++, Python</p>
+
+                    <!-- <a href="#">Learn More</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------portfolio--------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Dating Website</h3>
+                        <p>A sample dating websites for dogs.</p>
+                        <a href="https://lakhan72002.github.io/tindog/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Cricket Game</h3>
+                        <p>A cricket game.</p>
+                        <a href="https://lakhan72002.github.io/cricket_game/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Portfolio</h3>
+                        <p>A demo portfolio website.</p>
+                        <a href="https://lakhan72002.github.io/portfolio_demo/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+
+        </div>
+    </div>
+
+    <!-- --------------contact--------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> lakhan1234sh@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> +91 9953640910</p>
+                    <div class="social-icons">
+                        <!-- twitter -->
+                        <a href="https://twitter.com/lakhans61130718"><i class="fab fa-twitter-square"></i></a>
+                        <!-- instagram -->
+                        <a href="https://www.instagram.com/shree_lakhansh25/"><i class="fab fa-instagram"></i></a>
+                        <!-- linkedin -->
+                        <a href="https://www.linkedin.com/in/lakhan72002/"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <!-- download cv -->
+                    <a href="images/Lakhan Sharma Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" id="" placeholder="Your Email" required>
+                        <textarea name="Message" id="" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- copyright -->
+        <div class="copyright">
+            <p>Copyright &#169; Lakhan. <i class="fa-solid fa-hand-peace"></i></p>
+        </div>
+    </div>
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+        function closemenu(){
+            sidemeu.style.right = "-200px";
+        }
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz1ngb75derr0McDMzX3lKDcrd_diibMzUJz6YovZGSXva399yx2gqJBctHJPBgc4LpSw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {msg.innerHTML = "Message sent successfully" 
+        setTimeout(function(){
+            msg.innerHTML =""
+        },5000)
+        form.reset()
+    })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+    <!-- header section animations -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Web Developer','Programmer', 'Web Developer'],
+          typeSpeed: 50,
+        });
+    </script>
+</body>
+</html>
